@@ -58,3 +58,4 @@ project.spdx
 # without a separate install. V2D source must NOT be tracked here.
 deps/v2d/src/
 deps/v2d/wheels/
+examples/mcap_record_replay/python/data.mcap
