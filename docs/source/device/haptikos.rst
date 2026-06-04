@@ -86,12 +86,14 @@ In one terminal, start the CloudXR runtime (keep it running for the duration of 
 In a second terminal, source the environment file that the runtime writes on startup. This points the OpenXR loader at CloudXR:
 
 .. code-block:: bash
+
    cd IsaacTeleop/
    source ~/.cloudxr/run/cloudxr.env
 
 In the same terminal, run the plugin with the following(The executable will be located in the build/src/plugins/haptikos. If you installed the project by running cmake --install build the executable will also be found in the /install/plugins/haptikos folder.):
 
 .. code-block:: bash
+    
    ./install/plugins/haptikos/haptikos_hands_plugin
 
 
