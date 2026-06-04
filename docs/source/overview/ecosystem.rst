@@ -89,7 +89,7 @@ session is running via USB or Bluetooth. See :ref:`device-interface-device-plugi
      - Offline data recording
      - `OAK-D Camera Plugin`_ (CLI tool)
    * - `Haptikos Exoskeletons`_
-     -  High-fidelity finger tracking (Haptikos Core App)
+     -  High-fidelity finger tracking and haptic feedback (Haptikos Core App)
      - `Haptikos Plugin`_ (CLI tool) 
 
 Planned Input Device Support
