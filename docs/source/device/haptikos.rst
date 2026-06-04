@@ -4,7 +4,7 @@
 Haptikos Exoskeletons
 =====================
 
-Use the `Haptikos<https://haptikos.tech/>`_ Exoskeletons with the Isaac Teleop framework. Currently only Linux is supported. Tested on Meta Quest headsets. Other headsets with controller may work as well.
+Use the `Haptikos <https://haptikos.tech/>`_ Exoskeletons with the Isaac Teleop framework. Currently only Linux is supported. Tested on Meta Quest headsets. Other headsets with controller may work as well.
 
 .. contents:: On this page
    :local:
@@ -28,10 +28,10 @@ Quick Start
 Step 1: Get the Haptikos API 
 ~~~~~~~~~~~~~~~~~~~~
 
-The Haptikos API must be downloaded seperately due to licencing. Check our `website<https://haptikos.tech/>`_.
+The Haptikos API must be downloaded seperately due to licencing. Check our `website <https://haptikos.tech/>`_.
 
 1. Obtain a Haptikos account.
-2. Clone the repository `<https://github.com/Haptikostech/HaptikosAPI>`_.
+2. Clone the `repository <https://github.com/Haptikostech/HaptikosAPI>`_.
 3. Copy the ``HaptikosCpp_API_Shared`` folder from our HaptikosAPI repository into the ``src/plugins/haptikos`` folder. The folder structure should be the following:
 
 .. code-block:: text
