@@ -5,7 +5,6 @@ Haptikos Exoskeletons
 ============
 
 Use the Haptikos Exoskeletons with the Isaac Teleop framework. Currently only Linux is supported. Tested on Meta Quest headsets. Other headsets with controller may work as well.
-Overview
 
 .. contents:: On this page
    :local:
@@ -29,11 +28,11 @@ Quick Start
 Step 1: Get the Haptikos API 
 ~~~~~~~~~~~~~~~~~~~~
 
-The Haptikos API must be downloaded seperately due to licencing. Check our website.
+The Haptikos API must be downloaded seperately due to licencing. Check our website<https://haptikos.tech/>.
 
 1. Obtain a Haptikos account.
-2. Clone the repository.
-3. Copy the HaptikosCpp_API_Shared folder from our HaptikosAPI repository into the src/plugins/haptikos folder. The folder structure should be the following:
+2. Clone the repository <https://github.com/Haptikostech/HaptikosAPI>`_.
+3. Copy the ``HaptikosCpp_API_Shared`` folder from our HaptikosAPI repository into the ``src/plugins/haptikos`` folder. The folder structure should be the following:
 
 .. code-block:: text
     src/plugins/haptikos/
@@ -65,7 +64,7 @@ Step 3: Build the entire project
    cmake --build build --parallel 4
    cmake --install build
 
-We use the -DENABLE_CLANG_FORMAT_CHECH=OFF because the headers are HaptikosAPI library are not clang formatted. You can clang format the headers to not include the flag by running:
+We use the ``-DENABLE_CLANG_FORMAT_CHECH=OFF`` because the headers are HaptikosAPI library are not clang formatted. You can clang format the headers to not include the flag by running:
 
 .. code-block:: bash
 
@@ -90,18 +89,27 @@ In a second terminal, source the environment file that the runtime writes on sta
    cd IsaacTeleop/
    source ~/.cloudxr/run/cloudxr.env
 
-In the same terminal, run the plugin with the following(The executable will be located in the build/src/plugins/haptikos. If you installed the project by running cmake --install build the executable will also be found in the /install/plugins/haptikos folder.):
+In the same terminal, run the plugin with the following:
 
 .. code-block:: bash
     
    ./install/plugins/haptikos/haptikos_hands_plugin
 
-
-Troubleshooting
+Important Information
 ---------------
 
-1. To use the plugin properly it is necessary to attach the controllers on our exoskeletons using the included mount. The Haptikos Core App, the Haptikos Exoskeletons and the controllers, all need to be active while the plugin is running.
+1. To use the plugin properly it is necessary to attach the controllers on our exoskeletons using the included mount.
 
-2. The orientation calibration defines the directional the Haptikos Gloves define as forward. This needs to be aligned with the Head Mounted Display's. For example, when connecting to a Meta Quest using the Nvidia Teleop Quick Start Guide, the forward direction is towards the control panel that appears after Step 5 (Connect to an XR Headset).
+2. The orientation calibration defines the directional the Haptikos Gloves define as forward. This needs to be aligned with the Head Mounted Display's.
 
 3. To inject the hand tracking data, the controllers, the Haptikos Core App and the exoskeletons need to be active.
+
+4. The executable will be located in the ``build/src/plugins/haptikos``. If you installed the project by running ``cmake --install build`` the executable will also be found in the ``/install/plugins/haptikos`` folder.
+
+
+License
+-------
+
+Source files are covered by their stated licenses (Apache-2.0). The Haptikos API is
+proprietary to Haptikos and is subject to its own license; it is **not** redistributed
+by this project.
