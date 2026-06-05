@@ -53,11 +53,11 @@ See the [Ecosystem](https://nvidia.github.io/IsaacTeleop/main/overview/ecosystem
 
 ### Documentation
 
-Our [documentation page](https://nvidia.github.io/IsaacTeleop) provides everything you need to get started, including detailed tutorials and step-by-step guides. Follow these links to learn more:
+Our [documentation page](https://haptikostech.github.io/IsaacTeleop/haptikos-plugin/) provides everything you need to get started, including detailed tutorials and step-by-step guides. Follow these links to learn more:
 
-- [Architecture](https://nvidia.github.io/IsaacTeleop/main/overview/architecture.html)
-- [Quick installation steps](https://nvidia.github.io/IsaacTeleop/main/getting_started/quick_start.html)
-- [How to build from source](https://nvidia.github.io/IsaacTeleop/main/getting_started/build_from_source.html)
+- [Architecture](https://haptikostech.github.io/IsaacTeleop/haptikos-plugin/source/overview/architecture.html)
+- [Quick installation steps](https://haptikostech.github.io/IsaacTeleop/haptikos-plugin/source/setup/installation.html)
+- [How to build from source](https://haptikostech.github.io/IsaacTeleop/haptikos-plugin/source/setup/build_from_source.html)
 
 
 ### Install & Run Isaac Lab
