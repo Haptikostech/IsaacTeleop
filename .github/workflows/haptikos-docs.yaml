@@ -1,0 +1,51 @@
+name: Build Haptikos Plugin Docs
+
+on:
+  push:
+    branches:
+      - haptikos-plugin
+    paths:
+      - "docs/**"
+      - ".github/workflows/haptikos-docs.yaml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: haptikos-plugin-docs
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    name: Build and deploy haptikos-plugin docs only
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout haptikos-plugin
+        uses: actions/checkout@v4
+        with:
+          ref: haptikos-plugin
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install docs requirements
+        working-directory: ./docs
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build current branch docs only
+        working-directory: ./docs
+        run: make current-docs
+
+      - name: Deploy haptikos-plugin docs to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/build/current
+          destination_dir: haptikos-plugin
+          keep_files: true
