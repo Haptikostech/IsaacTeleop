@@ -25,8 +25,8 @@ Prerequisites
 Quick Start
 -----------
 
-Step 1: Get the Haptikos API 
-~~~~~~~~~~~~~~~~~~~~
+Step 1: Get the Haptikos API
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Haptikos API must be downloaded seperately due to licencing. Check our `website <https://haptikos.tech/>`_.
 
@@ -35,16 +35,17 @@ The Haptikos API must be downloaded seperately due to licencing. Check our `webs
 3. Copy the ``HaptikosCpp_API_Shared`` folder from our HaptikosAPI repository into the ``src/plugins/haptikos`` folder. The folder structure should be the following:
 
 .. code-block:: text
-    src/plugins/haptikos/
-    ├── CMakeLists.txt
-    ├── HaptikosCpp_API_Shared
-    │   ├── include
-    │   └── lib
-    ├── haptikos_hands_plugin.cpp
-    ├── haptikos_hands_plugin.hpp
-    ├── main.cpp
-    ├── plugin.yaml
-    └── README.md
+
+   src/plugins/haptikos/
+   ├── CMakeLists.txt
+   ├── HaptikosCpp_API_Shared
+   │   ├── include
+   │   └── lib
+   ├── haptikos_hands_plugin.cpp
+   ├── haptikos_hands_plugin.hpp
+   ├── main.cpp
+   ├── plugin.yaml
+   └── README.md
 
 Step 2: Build the plugin
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,12 +74,12 @@ We use the ``-DENABLE_CLANG_FORMAT_CHECH=OFF`` because the headers are HaptikosA
 Step 4: Run the plugin
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The Haptikos plugin connects to the Teleop session through the CloudXR / OpenXR runtime, so the runtime must be running and its environment sourced in the shell that launches the plugin. 
+The Haptikos plugin connects to the Teleop session through the CloudXR / OpenXR runtime, so the runtime must be running and its environment sourced in the shell that launches the plugin.
 
 In one terminal, start the CloudXR runtime (keep it running for the duration of the session):
 
 .. code-block:: bash
-   
+
    source isaac_teleop_env/bin/activate
    python -m isaacteleop.cloudxr
 
@@ -92,11 +93,11 @@ In a second terminal, source the environment file that the runtime writes on sta
 In the same terminal, run the plugin with the following:
 
 .. code-block:: bash
-    
+
    ./install/plugins/haptikos/haptikos_hands_plugin
 
 Important Information
----------------
+---------------------
 
 1. To use the plugin properly it is necessary to attach the controllers on our exoskeletons using the included mount.
 
