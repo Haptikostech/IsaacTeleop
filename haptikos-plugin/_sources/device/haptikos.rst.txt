@@ -13,7 +13,7 @@ Use the `Haptikos <https://haptikos.tech/>`_ Exoskeletons with the Isaac Teleop 
 Components
 ----------
 
-- **Core library** (``haptikos_core``) — wraps the Haptikos Core App(``libHaptikosCore.so``) and provides access to per-joint tracking data.
+- **Core library** (``haptikos_core``) — wraps the Haptikos Core App(``libHaptikosCore.so``) and provides access to per-joint tracking data and haptics.
 - **Plugin executable** (``haptikos_plugin``) — the primary plugin binary that enables integration with the Teleop system via CloudXR and OpenXR.
 
 Prerequisites
@@ -103,7 +103,7 @@ Important Information
 
 2. The orientation calibration defines the directional the Haptikos Gloves define as forward. This needs to be aligned with the Head Mounted Display's.
 
-3. To inject the hand tracking data, the controllers, the Haptikos Core App and the exoskeletons need to be active.
+3. To inject the hand tracking data and haptics, the controllers, the Haptikos Core App and the exoskeletons need to be active.
 
 4. The executable will be located in the ``build/src/plugins/haptikos``. If you installed the project by running ``cmake --install build`` the executable will also be found in the ``/install/plugins/haptikos`` folder.
 

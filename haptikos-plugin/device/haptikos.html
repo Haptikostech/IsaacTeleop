@@ -438,7 +438,7 @@
 <section id="components">
 <h2><a class="toc-backref" href="#id1" role="doc-backlink">Components</a><a class="headerlink" href="#components" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>Core library</strong> (<code class="docutils literal notranslate"><span class="pre">haptikos_core</span></code>) — wraps the Haptikos Core App(<code class="docutils literal notranslate"><span class="pre">libHaptikosCore.so</span></code>) and provides access to per-joint tracking data.</p></li>
+<li><p><strong>Core library</strong> (<code class="docutils literal notranslate"><span class="pre">haptikos_core</span></code>) — wraps the Haptikos Core App(<code class="docutils literal notranslate"><span class="pre">libHaptikosCore.so</span></code>) and provides access to per-joint tracking data and haptics.</p></li>
 <li><p><strong>Plugin executable</strong> (<code class="docutils literal notranslate"><span class="pre">haptikos_plugin</span></code>) — the primary plugin binary that enables integration with the Teleop system via CloudXR and OpenXR.</p></li>
 </ul>
 </section>
@@ -517,7 +517,7 @@ python<span class="w"> </span>-m<span class="w"> </span>isaacteleop.cloudxr
 <ol class="arabic simple">
 <li><p>To use the plugin properly it is necessary to attach the controllers on our exoskeletons using the included mount.</p></li>
 <li><p>The orientation calibration defines the directional the Haptikos Gloves define as forward. This needs to be aligned with the Head Mounted Display’s.</p></li>
-<li><p>To inject the hand tracking data, the controllers, the Haptikos Core App and the exoskeletons need to be active.</p></li>
+<li><p>To inject the hand tracking data and haptics, the controllers, the Haptikos Core App and the exoskeletons need to be active.</p></li>
 <li><p>The executable will be located in the <code class="docutils literal notranslate"><span class="pre">build/src/plugins/haptikos</span></code>. If you installed the project by running <code class="docutils literal notranslate"><span class="pre">cmake</span> <span class="pre">--install</span> <span class="pre">build</span></code> the executable will also be found in the <code class="docutils literal notranslate"><span class="pre">/install/plugins/haptikos</span></code> folder.</p></li>
 </ol>
 </section>
@@ -671,7 +671,7 @@ by this project.</p>
 
   <p class="copyright">
     
-      Copyright © 2025-2026, NVIDIA CORPORATION &amp; AFFILIATES, last updated on June 05, 2026.
+      Copyright © 2025-2026, NVIDIA CORPORATION &amp; AFFILIATES, last updated on June 08, 2026.
       <br/>
     
   </p>
